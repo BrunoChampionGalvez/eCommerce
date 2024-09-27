@@ -12,8 +12,8 @@ const config = {
     username: process.env.DB_USERNAME,
     password: String(process.env.DB_PASSWORD),
     autoLoadEntities: true,
-    synchronize: true,
-    dropSchema: true,
+    synchronize: false,
+    dropSchema: false,
     logging: true,
     ssl: {
         rejectUnauthorized: false, // This ensures SSL is used but doesn't require a certificate
