@@ -15,7 +15,9 @@ const config = {
     synchronize: false,
     dropSchema: false,
     logging: true,
-    // dropSchema: true,
+    ssl: {
+        rejectUnauthorized: false, // This ensures SSL is used but doesn't require a certificate
+    },
     entities: ['dist/**/*.entity{.js,.ts}'],
     migrations: ['dist/migrations/*{.js,.ts}'],
 }
