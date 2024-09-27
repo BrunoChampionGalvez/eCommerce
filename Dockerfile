@@ -13,8 +13,11 @@ RUN npm install
 # Copy the rest of the app
 COPY . .
 
+# Build the app (compile TypeScript to JavaScript)
+RUN npm run build
+
 # Expose the app on port 3000
 EXPOSE 3000
 
-# Start the app
-CMD [ "npm", "start" ]
+# Start the app in production mode
+CMD ["npm", "run", "start:prod"]
