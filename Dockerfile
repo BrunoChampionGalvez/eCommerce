@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Expose the app on port 3000
-EXPOSE 3000
+EXPOSE 8000
 
 # Start the app in production mode
 CMD ["npm", "run", "start:prod"]
