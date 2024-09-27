@@ -7,7 +7,7 @@ import { User } from "src/users/users.entity";
 import { JwtModule } from "@nestjs/jwt";
 import { config as dotenvConfig} from "dotenv"
 
-dotenvConfig({path: '.development.env'})
+dotenvConfig({path: '.env'})
 
 @Module({
     imports: [

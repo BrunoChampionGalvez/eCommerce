@@ -3,7 +3,7 @@ import { JwtService } from '@nestjs/jwt';
 import { Observable } from 'rxjs';
 import { config as dotenvConfig } from 'dotenv'
 
-dotenvConfig({path: '.development.env'})
+dotenvConfig({path: '.env'})
 
 @Injectable()
 export class AuthGuard implements CanActivate {
